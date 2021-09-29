@@ -1,0 +1,292 @@
+//general styles for all galleries
+
+.sculpture-gallery,
+.painting-gallery,
+.tableware-gallery,
+.other-gallery {
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+//     * {
+//         box-sizing: border-box;
+//     }
+
+//     img {
+//         width: 40%;
+//         height: 45%;
+//         margin: 1%;
+//         border-radius: 10%;
+
+//         @media screen and (max-width: $mq-tablet) {
+//             width: 40%;
+//         }
+
+//         @media screen and (max-width: $mq-phone) {
+//             width: 100%;
+//         }
+//     }
+
+// }
+
+
+// .other-gallery {
+
+
+//     img {
+//         width: 100%;
+//         height: 100%;
+//         margin: 1%;
+//         border-radius: 10%;
+
+// @media screen and (max-width: $mq-tablet) {
+//     width: 40%;
+// }
+
+// @media screen and (max-width: $mq-phone) {
+//     width: 100%;
+// }
+
+// }
+
+
+// }
+
+
+///////////////////////////////
+
+
+.hover-img {
+    background-color: $color1;
+    color: #fff;
+    display: inline-block;
+    margin: 8px;
+    width: 40%;
+    height: 45%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border-radius: 10%;
+
+
+    @media screen and (max-width: $mq-tablet) {
+        width: 100%;
+    }
+
+}
+
+.hover-img * {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+}
+
+.hover-img:before,
+.hover-img:after {
+    background-color: $color1;
+    border-top: 32px solid $color1;
+    border-bottom: 32px solid $color1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+    transform: scaleY(2);
+}
+
+.hover-img img {
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+
+//show image description on hover
+
+.hover-img figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    // line-height: 1rem;
+    opacity: 0;
+    z-index: 2;
+    transition-delay: 0.1s;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 100%;
+    overflow-y: scroll;
+
+
+
+    // @media screen and (max-width: $mq-computer) {
+    //     font-size: 50%;
+
+
+    // }
+
+    // @media screen and (max-width: $mq-tablet) {
+    //     font-size: 60%;
+
+
+    // }
+
+
+
+}
+
+.hover-img:hover:before,
+.hover-img:hover:after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.hover-img:hover>img {
+    opacity: 0.7;
+}
+
+.hover-img:hover figcaption {
+    opacity: 1;
+
+
+
+}
+
+
+
+
+// .img__wrap {
+//   position: relative;
+//   height: 200px;
+//   width: 257px;
+// }
+
+// .img__description {
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   background: rgba(29, 106, 154, 0.72);
+//   color: #fff;
+//   visibility: hidden;
+//   opacity: 0;
+
+//   /* transition effect. not necessary */
+//   transition: opacity .2s, visibility .2s;
+// }
+
+// .img__wrap:hover .img__description {
+//   visibility: visible;
+//   opacity: 1;
+// }
+
+
+
+// //experiment
+
+// #myImg {
+//     border-radius: 5px;
+//     cursor: pointer;
+//     transition: 0.3s;
+// }
+
+// #myImg:hover {
+//     opacity: 0.7;
+// }
+
+// .modal {
+//     display: none;
+//     /* Hidden by default */
+//     position: fixed;
+//     /* Stay in place */
+//     z-index: 50;
+//     /* Sit on top */
+//     padding-top: 50px;
+//     /* Location of the box */
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     /* Full width */
+//     height: 100%;
+//     /* Full height */
+//     overflow: auto;
+//     /* Enable scroll if needed */
+//     background-color: rgb(0, 0, 0);
+//     /* Fallback color */
+//     background-color: rgba(0, 0, 0, 0.9);
+//     /* Black w/ opacity */
+// }
+
+// .modal-content {
+//     margin: auto;
+//     display: block;
+//     width: 80%;
+//     max-width: 700px;
+// }
+
+// #caption {
+//     margin: auto;
+//     display: block;
+//     width: 80%;
+//     max-width: 700px;
+//     text-align: center;
+//     color: #ccc;
+//     padding: 10px 0;
+//     height: 150px;
+// }
+
+// .modal-content,
+// #caption {
+//     animation-name: zoom;
+//     animation-duration: 0.6s;
+// }
+
+// @keyframes zoom {
+//     from {
+//         transform: scale(0)
+//     }
+
+//     to {
+//         transform: scale(1)
+//     }
+// }
+
+// .close {
+//     position: absolute;
+//     top: 15px;
+//     right: 35px;
+//     color: #f1f1f1;
+//     font-size: 40px;
+//     font-weight: bold;
+//     transition: 0.3s;
+// }
+
+// .close:hover,
+// .close:focus {
+//     color: #bbb;
+//     text-decoration: none;
+//     cursor: pointer;
+// }
+
+// @media only screen and (max-width: 700px) {
+//     .modal-content {
+//         width: 100%;
+//     }
+// }

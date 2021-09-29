@@ -1,0 +1,330 @@
+@import "variables.scss";
+@import "navigation.scss";
+@import "projects.scss";
+@import "galleries.scss";
+
+
+// GENERAL STYLES
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0 0 0 0;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+  background-color: $color1;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+// TOP SECTION STYLES
+.top-img {
+  width: 100vw;
+  height: 65vw;
+
+  @media screen and (max-width: $mq-phone) {
+    height: 80vw;
+  }
+
+}
+
+// .top-section {
+//   margin-bottom: 5%;
+// }
+
+
+//Carousel Section
+#carousel-section {
+  background-color: $color1;
+  padding-bottom: 5%;
+}
+
+.carousel {
+  overflow: hidden;
+  max-width: 600px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+  &__item,
+  &__item--hidden {
+    display: none;
+
+    img {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      max-height: 90vh;
+      border-radius: 10%;
+
+    }
+  }
+
+  &__item--visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+
+    button {
+      border-radius: 50px;
+      border: 0;
+      font-weight: bold;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+
+
+
+    }
+  }
+}
+
+#carousel__button--prev {
+  margin-left: 20px;
+}
+
+#carousel__button--next {
+  margin-right: 20px;
+}
+
+.carousel-header {
+  text-align: center;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+
+
+//About Section
+#about {
+  background-color: $color2;
+
+  h1 {
+    padding-top: 5vh;
+  }
+}
+
+.biography {
+  overflow: hidden;
+  margin-top: 3%;
+
+  @media screen and (max-width:$mq-large-screens) {
+    //TO KEEP TEXT AND IMAGES WELL ALIGNED ALL SCREEN SIZES
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .profile-picture {
+    margin-right: 15px;
+    padding-left: 20%;
+    float: left;
+    width: 30%;
+    height: 30%;
+    border-radius: 25px;
+
+    @media screen and (max-width:$mq-large-screens) {
+      margin: 0 auto 0 auto;
+      padding: 0;
+    }
+  }
+
+  // TEXT INSIDE BIOGRAPHY PART
+  h3 {
+    @media screen and (max-width:$mq-large-screens) {
+      text-align: center;
+    }
+  }
+
+  p {
+    margin-left: 15px;
+    padding-right: 20%;
+    display: block;
+    margin: 2px 0 0 0;
+
+    @media screen and (max-width:$mq-large-screens) {
+      margin: 0 auto 0 auto;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}
+
+
+.my-work {
+  overflow: hidden;
+  margin-top: 5vw;
+  padding-bottom: 5vw;
+
+  @media screen and (max-width:$mq-large-screens) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-picture {
+    margin-left: 15px;
+    padding-right: 20%;
+    float: right;
+    width: 30%;
+    height: 30%;
+    border-radius: 25px;
+
+    @media screen and (max-width:$mq-large-screens) {
+      margin: 0 auto 0 auto;
+      padding: 0;
+    }
+
+  }
+
+  // TEXT INSIDE MY WORK PART
+  p,
+  h3 {
+    margin-right: 15px;
+    padding-left: 20%;
+    display: block;
+    margin: 2px 0 0 0;
+  }
+
+  p {
+    @media screen and (max-width:$mq-large-screens) {
+      margin: 0 auto 0 auto;
+      padding: 0;
+      text-align: center;
+    }
+  }
+
+  h3 {
+    @media screen and (max-width:$mq-large-screens) {
+      text-align: center;
+      margin-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+
+//Contact Section 
+
+#contact {
+  background-color: $color1;
+
+  h1 {
+    margin-top: 0;
+    padding-top: 5vh;
+  }
+}
+
+.contact-form {
+  text-align: center;
+
+  textarea {
+    padding: 2%;
+  }
+
+  input[type=submit] {
+    padding: 1% 2%;
+  }
+
+
+  textarea,
+  input[type=text],
+  input[type=submit] {
+    border-radius: 10%;
+    border: none;
+
+
+    @media screen and (max-width: $mq-phone) {
+      width: 80%;
+    }
+  }
+
+  input[type=submit]:hover {
+    background-color: $color-complimentary;
+  }
+}
+
+
+//FOOTER STYLES
+
+footer {
+  background-color: $color2;
+
+  p {
+    display: inline-block;
+    position: absolute;
+    right: 1vw;
+    transform: translateY(200%);
+    font-size: 0.7rem;
+  }
+}
+
+.fa-instagram {
+  padding: 5px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-instagram:hover {
+  opacity: 0.7;
+}
+
+//phone and mail icons 
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 130px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 350%;
+  left: 105%;
+  z-index: 1;
+}
+
+.tooltip-container:hover .tooltip-text {
+
+  visibility: visible;
+}
+
+.fa-envelope,
+.fa-phone {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 150%;
+
+}

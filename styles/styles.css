@@ -1,0 +1,297 @@
+.navigation-bar {
+  background-color: #b29be0;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation-bar__link {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 0 1vw 0 1vw;
+}
+
+@media screen and (max-width: 481px) {
+  .navigation-bar__link {
+    font-size: 5vw;
+  }
+}
+
+.logo {
+  height: 100%;
+}
+
+.all-img {
+  padding: 0 10% 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+.all-img span {
+  display: block;
+}
+
+.all-img a:link {
+  text-decoration: none;
+}
+
+.all-img a:hover {
+  text-decoration: none;
+}
+
+.all-img a {
+  width: 30%;
+  height: 30%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 400px;
+          flex: 0 0 400px;
+  text-decoration: none;
+}
+
+.all-img a p {
+  margin-top: 0;
+  margin-bottom: 10%;
+  color: black;
+}
+
+.all-img a .sculptures,
+.all-img a .paintings,
+.all-img a .table-ware,
+.all-img a .other {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.table-ware {
+  float: right;
+}
+
+.sculpture-gallery,
+.painting-gallery,
+.tableware-gallery,
+.other-gallery {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.sculpture-gallery *,
+.painting-gallery *,
+.tableware-gallery *,
+.other-gallery * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sculpture-gallery img,
+.painting-gallery img,
+.tableware-gallery img,
+.other-gallery img {
+  width: 30%;
+  height: 35%;
+  margin: 1%;
+  border-radius: 10%;
+}
+
+@media screen and (max-width: 769px) {
+  .sculpture-gallery img,
+  .painting-gallery img,
+  .tableware-gallery img,
+  .other-gallery img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .sculpture-gallery img,
+  .painting-gallery img,
+  .tableware-gallery img,
+  .other-gallery img {
+    width: 100%;
+  }
+}
+
+.other-gallery img {
+  width: 20%;
+  height: 25%;
+  margin: 1%;
+  border-radius: 10%;
+}
+
+@media screen and (max-width: 769px) {
+  .other-gallery img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .other-gallery img {
+    width: 100%;
+  }
+}
+
+body {
+  margin: 0 0 0 0;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+}
+
+h1 {
+  text-align: center;
+}
+
+.top-img {
+  width: 100vw;
+  height: 50vw;
+}
+
+@media screen and (max-width: 481px) {
+  .top-img {
+    height: 45vw;
+  }
+}
+
+.top-section {
+  margin-bottom: 5%;
+}
+
+.biography {
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 1025px) {
+  .biography {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.biography .profile-picture {
+  margin-right: 15px;
+  padding-left: 20%;
+  float: left;
+  width: 30%;
+  height: 30%;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 1025px) {
+  .biography .profile-picture {
+    margin: 0 auto 0 auto;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .biography h3 {
+    text-align: center;
+  }
+}
+
+.biography p {
+  margin-left: 15px;
+  padding-right: 20%;
+  display: block;
+  margin: 2px 0 0 0;
+}
+
+@media screen and (max-width: 1025px) {
+  .biography p {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.my-work {
+  overflow: hidden;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+@media screen and (max-width: 1025px) {
+  .my-work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.my-work .profile-picture {
+  margin-left: 15px;
+  padding-right: 20%;
+  float: right;
+  width: 30%;
+  height: 30%;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 1025px) {
+  .my-work .profile-picture {
+    margin: 0 auto 0 auto;
+    padding: 0;
+  }
+}
+
+.my-work p,
+.my-work h3 {
+  margin-right: 15px;
+  padding-left: 20%;
+  display: block;
+  margin: 2px 0 0 0;
+}
+
+@media screen and (max-width: 1025px) {
+  .my-work p {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .my-work h3 {
+    text-align: center;
+    margin-right: 0;
+    padding-left: 0;
+  }
+}
+
+.contact-form {
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */

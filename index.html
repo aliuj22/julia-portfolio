@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>Klaudia Kazmierczak Art Portfolio</title>
+  <link rel="icon" href="../Klaudia portfolio copy/favicon_io/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/6e643d21a4.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Klaudia Kazmierczak is a young Swedish artist and sculptor with Polish heritage, currently studying at Gerrit Rietveld Academie in
+  Amsterdam.">
+</head>
+
+<body>
+  <header>
+    <!-- NAVIGATION BAR SECTION -->
+    <nav class="navigation-bar">
+      <a href="index.html"><img class="logo" src="./logo copy.png"
+          alt="logo that says kk from name and surname of Klaudia Kazmierczak" /></a>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="navigation-bar__links" id="nav-list">
+        <a href="projects.html" class="navigation-bar__link">Projects</a>
+        <a href="index.html#about" class="navigation-bar__link">About</a>
+        <a href="index.html#contact" class="navigation-bar__link">Contact</a>
+      </div>
+    </nav>
+    <section class="top-section">
+      <div class="top-img-container">
+        <img src="./face-sculpture-main.png" alt="main picture of candle holder in a shape of human face"
+          class="top-img" />
+      </div>
+    </section>
+
+    <!-- CAROUSEL SECTION -->
+    <section id="carousel-section">
+      <div class="carousel">
+        <h2 class="carousel-header">FEATURED WORK</h2>
+        <div class="carousel__item carousel__item--visible"><img
+            src="./carousel pictures/slide show pictures/slide1.jpg" alt=""></div>
+        <div class="carousel__item"><img src="./carousel pictures/slide show pictures/slide2.JPG" alt=""></div>
+        <div class="carousel__item"><img src="./carousel pictures/slide show pictures/slide3.JPEG" alt=""></div>
+        <div class="carousel__item"><img src="./carousel pictures/slide show pictures/slide4.JPG" alt=""></div>
+        <div class="carousel__item"><img src="./carousel pictures/slide show pictures/slide5.JPG" alt=""></div>
+        <div class="carousel__actions">
+          <button id="carousel__button--prev" aria-label="previous slide">
+            < </button> <button id="carousel__button--next" aria-label="next slide"> >
+          </button>
+        </div>
+    </section>
+    </div>
+    <!-- ABOUT ME SECTION -->
+    <section id="about">
+      <h1>ABOUT ME</h1>
+      <div class="biography">
+        <img src="./painting-logo.png" alt="a colorful autoportrait of Klaudia Kazmierczak" class="profile-picture" />
+        <h3>Biography</h3>
+        <p>
+          Hello and welcome to my world!
+          I am a Polish artist who have been active in Sweden for a long time. Now I have based myself in the
+          Netherlands to continue with my work, study and explore the art world outside of Scandinavia.
+
+          My heritage is Polish but I would say that Sweden has become lika a home for me, that’s the place where I grew
+          up and got the opportunity to open up my creative side. I will always be grateful for that.
+
+          I have been studying woodwork, ceramics and now I started my studies at the Gerrit Rietveld Academie in
+          Amsterdam to get to know me and expand my artistic side.
+
+        </p>
+      </div>
+      <div class="my-work">
+        <img src="./my-work-pic.jpg" alt="" class="profile-picture" />
+        <h3>My Work</h3>
+        <p>
+          Here you can see a beginning of a way in to my mind. It is a colorful world of organic forms in different
+          medias and exploring techniques.
+
+          The idea of my work is to make a mind interact with the work and forget the surroundings around one.
+
+          Here you can find all of my different works. Feel free to explore and don’t hesitate to write to me if you
+          have any comments or are interested.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT ME FORM -->
+    <section id="contact">
+      <h1>CONTACT ME</h1>
+      <form class="contact-form" action="mailto:klakaz99@gmail.com" method="post" enctype="text/plain">
+        <label for="text">Your Name:</label>
+        <input type="text" id="text" value="" />
+
+        <br />
+        <br />
+        <label for="message">Your Message:</label>
+        <br />
+        <br />
+        <textarea id="message" rows="20" cols="50"></textarea>
+        <br />
+        <input type="submit" name="yourMessage" value="Submit" />
+      </form>
+    </section>
+  </header>
+
+  <footer>
+    <a href="https://www.instagram.com/konstenattvarakk/" class="fab fa-instagram"></a>
+    <div class="tooltip-container"><i class="fas fa-phone"></i>
+      <p class="tooltip-text">+46737193365</p>
+    </div>
+    <div class="tooltip-container"><i class="far fa-envelope"></i>
+      <p class="tooltip-text">klakaz99@gmail.com</p>
+    </div>
+    <p>©Julia Wos, 2021</p>
+
+  </footer>
+  <!-- JAVASCRIPT FILES -->
+
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/hamburger.js"></script>
+</body>
+
+</html>
