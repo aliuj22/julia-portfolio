@@ -161,7 +161,12 @@
     opacity: 0.7;
 }
 
-.hover-img:hover figcaption {
+.hover-img:focus>img {
+    opacity: 0;
+}
+
+.hover-img:hover figcaption,
+.hover-img:focus figcaption {
     opacity: 1;
 
 

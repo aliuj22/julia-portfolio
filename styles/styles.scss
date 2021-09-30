@@ -300,6 +300,8 @@ footer {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .tooltip-text {
@@ -316,7 +318,10 @@ footer {
   z-index: 1;
 }
 
-.tooltip-container:hover .tooltip-text {
+
+//keyboard focusable tooltips
+.tooltip-container:hover .tooltip-text,
+.tooltip-container:focus .tooltip-text {
 
   visibility: visible;
 }

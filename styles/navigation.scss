@@ -59,10 +59,30 @@
     text-decoration: none;
     font-size: 30px;
     padding: 0 1vw 0 1vw;
+    display: inline-block;
+    position: relative;
+
 
     @media screen and (max-width: $mq-phone) {
       font-size: 5vw;
     }
+
+  }
+
+  &__link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: transform 0.25s ease-out;
+  }
+
+  &__link:hover:after {
+    transform: scaleX(1);
 
   }
 

@@ -28,7 +28,8 @@
   }
 
   a:hover {
-    text-decoration: none;
+    text-decoration: underline white wavy;
+    transform: scale(1.1);
   }
 
   a {
@@ -37,6 +38,8 @@
 
     flex: 0 0 400px;
     text-decoration: none;
+    transition: transform 1s ease;
+
 
     @media screen and (max-width: $mq-phone) {
       flex: 0 0 auto;

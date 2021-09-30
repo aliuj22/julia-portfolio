@@ -32,8 +32,8 @@
     </nav>
     <section class="top-section">
       <div class="top-img-container">
-        <img src="./main pictures/face-sculpture-main.png" alt="main picture of candle holder in a shape of human face"
-          class="top-img" />
+        <img src="./main pictures/face-sculpture-main.webp" alt="main picture of candle holder in a shape of human face"
+          class="top-img" tabindex="0" />
       </div>
     </section>
 
@@ -41,12 +41,16 @@
     <section id="carousel-section">
       <div class="carousel">
         <h2 class="carousel-header">FEATURED WORK</h2>
-        <div class="carousel__item carousel__item--visible"><img
-            src="./carousel pictures/slide show pictures/slide1.jpg" alt=""></div>
-        <div class="carousel__item"><img src="./carousel pictures/slide show pictures/slide2.JPG" alt=""></div>
-        <div class="carousel__item"><img src="./carousel pictures/slide show pictures/slide3.JPEG" alt=""></div>
-        <div class="carousel__item"><img src="./carousel pictures/slide show pictures/slide4.JPG" alt=""></div>
-        <div class="carousel__item"><img src="./carousel pictures/slide show pictures/slide5.JPG" alt=""></div>
+        <div class="carousel__item carousel__item--visible"><a href="sculptures.html"><img
+              src="./carousel pictures/slide show pictures/slide1.jpg" alt=""></a></div>
+        <div class="carousel__item"><a href="tableware.html#carousel-link-2"><img
+              src="./carousel pictures/slide show pictures/slide2.JPG" alt=""></a></div>
+        <div class="carousel__item"><a href="other.html#carousel-link-3"><img
+              src="./carousel pictures/slide show pictures/slide3.JPEG" alt=""></a></div>
+        <div class="carousel__item"><a href="paintings.html#carousel-link-4"><img
+              src="./carousel pictures/slide show pictures/slide4.JPG" alt=""></a></div>
+        <div class="carousel__item"><a href="sculptures.html#carousel-link-5"><img
+              src="./carousel pictures/slide show pictures/slide5.JPG" alt=""></a></div>
         <div class="carousel__actions">
           <button id="carousel__button--prev" aria-label="previous slide">
             < </button> <button id="carousel__button--next" aria-label="next slide"> >
@@ -54,12 +58,13 @@
         </div>
     </section>
     </div>
+
     <!-- ABOUT ME SECTION -->
     <section id="about">
       <h1>ABOUT ME</h1>
       <div class="biography">
         <img src="./main pictures/painting-logo.png" alt="a colorful autoportrait of Klaudia Kazmierczak"
-          class="profile-picture" />
+          class="profile-picture" tabindex="0" />
         <h3>Biography</h3>
         <p>
           Hello and welcome to my world!
@@ -75,7 +80,7 @@
         </p>
       </div>
       <div class="my-work">
-        <img src="./main pictures/my-work-pic.jpeg" alt="" class="profile-picture" />
+        <img src="./main pictures/my-work-pic.jpeg" alt="" class="profile-picture" tabindex="0" />
         <h3>My Work</h3>
         <p>
           Here you can see a beginning of a way in to my mind. It is a colorful world of organic forms in different
@@ -94,28 +99,30 @@
       <h1>CONTACT ME</h1>
       <form class="contact-form" action="mailto:klakaz99@gmail.com" method="post" enctype="text/plain">
         <label for="text">Your Name:</label>
-        <input type="text" id="text" value="" />
+        <input type="text" name="Your Name
+        " id="text" value="" />
 
         <br />
         <br />
         <label for="message">Your Message:</label>
         <br />
         <br />
-        <textarea id="message" rows="20" cols="50"></textarea>
+        <textarea id="message" name="Your Message
+        " rows="20" cols="50"></textarea>
         <br />
-        <input type="submit" name="yourMessage" value="Submit" />
+        <input type="submit" value="Submit" />
       </form>
     </section>
   </header>
 
   <footer>
     <a href="https://www.instagram.com/konstenattvarakk/" class="fab fa-instagram"></a>
-    <div class="tooltip-container"><i class="fas fa-phone"></i>
+    <button class="tooltip-container"><i class="fas fa-phone"></i>
       <p class="tooltip-text">+46737193365</p>
-    </div>
-    <div class="tooltip-container"><i class="far fa-envelope"></i>
+    </button>
+    <button class="tooltip-container"><i class="far fa-envelope"></i>
       <p class="tooltip-text">klakaz99@gmail.com</p>
-    </div>
+    </button>
     <p>©Julia Wos, 2021</p>
 
   </footer>

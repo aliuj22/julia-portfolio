@@ -20,11 +20,27 @@
   text-decoration: none;
   font-size: 30px;
   padding: 0 1vw 0 1vw;
+  display: inline-block;
+  position: relative;
 }
 @media screen and (max-width: 481px) {
   .navigation-bar__link {
     font-size: 5vw;
   }
+}
+.navigation-bar__link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: transform 0.25s ease-out;
+}
+.navigation-bar__link:hover:after {
+  transform: scaleX(1);
 }
 @media screen and (max-width: 769px) {
   .navigation-bar__links {
@@ -90,13 +106,15 @@
   text-decoration: none;
 }
 .all-img a:hover {
-  text-decoration: none;
+  text-decoration: underline white wavy;
+  transform: scale(1.1);
 }
 .all-img a {
   width: 30%;
   height: 30%;
   flex: 0 0 400px;
   text-decoration: none;
+  transition: transform 1s ease;
 }
 @media screen and (max-width: 481px) {
   .all-img a {
@@ -230,7 +248,12 @@
   opacity: 0.7;
 }
 
-.hover-img:hover figcaption {
+.hover-img:focus > img {
+  opacity: 0;
+}
+
+.hover-img:hover figcaption,
+.hover-img:focus figcaption {
   opacity: 1;
 }
 
@@ -482,6 +505,8 @@ footer p {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .tooltip-text {
@@ -498,7 +523,8 @@ footer p {
   z-index: 1;
 }
 
-.tooltip-container:hover .tooltip-text {
+.tooltip-container:hover .tooltip-text,
+.tooltip-container:focus .tooltip-text {
   visibility: visible;
 }
 
