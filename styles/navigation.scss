@@ -110,6 +110,11 @@
   background-color: transparent;
   margin-top: 2%;
   margin-left: 2%;
+
+  @media screen and (max-width: $mq-phone) {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 .hamburger {

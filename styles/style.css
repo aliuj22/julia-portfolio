@@ -63,6 +63,12 @@
   margin-top: 2%;
   margin-left: 2%;
 }
+@media screen and (max-width: 481px) {
+  .logo {
+    width: 50%;
+    height: 50%;
+  }
+}
 
 .hamburger {
   background-color: transparent;
