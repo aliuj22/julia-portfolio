@@ -22,6 +22,7 @@
   padding: 0 1vw 0 1vw;
   display: inline-block;
   position: relative;
+  text-shadow: -1px 2px 2px black;
 }
 @media screen and (max-width: 481px) {
   .navigation-bar__link {
@@ -61,7 +62,7 @@
   height: 100%;
   background-color: transparent;
   margin-top: 2%;
-  margin-left: 2%;
+  margin-left: 3%;
 }
 @media screen and (max-width: 481px) {
   .logo {
@@ -84,10 +85,6 @@
   }
 }
 
-.hamburger:focus {
-  outline: none;
-}
-
 @media screen and (min-width: 1025px) {
   #projects {
     padding-top: 12vh;
@@ -105,10 +102,11 @@
   .all-img {
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0 0 0 0;
+    padding-left: 5%;
   }
 }
-.all-img a:link {
+.all-img a:link,
+.all-img a {
   text-decoration: none;
 }
 .all-img a:hover {
@@ -119,7 +117,6 @@
   width: 30%;
   height: 30%;
   flex: 0 0 400px;
-  text-decoration: none;
   transition: transform 1s ease;
 }
 @media screen and (max-width: 481px) {
@@ -131,11 +128,7 @@
   margin-top: 0;
   margin-bottom: 10%;
   color: black;
-}
-@media screen and (max-width: 481px) {
-  .all-img a p {
-    margin-bottom: 10%;
-  }
+  width: 90vw;
 }
 .all-img a .sculptures,
 .all-img a .paintings,
@@ -200,8 +193,6 @@
 .hover-img:before,
 .hover-img:after {
   background-color: #e0dbf0;
-  border-top: 32px solid #e0dbf0;
-  border-bottom: 32px solid #e0dbf0;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -218,7 +209,6 @@
   vertical-align: top;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
 }
 
 .hover-img figcaption {
@@ -227,7 +217,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  align-items: center;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -266,6 +255,7 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -279,6 +269,11 @@ h1 {
   text-align: center;
 }
 
+#about,
+footer {
+  background-color: #d8cef5;
+}
+
 .top-img {
   width: 100vw;
   height: 65vw;
@@ -289,8 +284,13 @@ h1 {
   }
 }
 
+.welcome {
+  color: rgba(54, 71, 221, 0.836);
+  font-size: 4vw;
+  margin: 5vw;
+}
+
 #carousel-section {
-  background-color: #e0dbf0;
   padding-bottom: 5%;
 }
 
@@ -352,9 +352,6 @@ h1 {
     opacity: 1;
     transform: opacity linear;
   }
-}
-#about {
-  background-color: #d8cef5;
 }
 #about h1 {
   padding-top: 5vh;
@@ -450,9 +447,6 @@ h1 {
   }
 }
 
-#contact {
-  background-color: #e0dbf0;
-}
 #contact h1 {
   margin-top: 0;
   padding-top: 5vh;
@@ -484,9 +478,6 @@ h1 {
   background-color: #f3efc5;
 }
 
-footer {
-  background-color: #d8cef5;
-}
 footer p {
   display: inline-block;
   position: absolute;

@@ -1,40 +1,4 @@
-// // Navigation Bar Styles
-
-// .navigation-bar {
-//   background-color: #a88ce0;
-//   font-weight: bold;
-//   display: inline-block;
-//   width: 100%;
-//   height: 100px;
-//   position: fixed;
-//   top: 0;
-//   z-index: 1;
-
-//   &__links {
-//     position: absolute;
-//     right: 50px;
-//     top: 50%;
-//     transform: translateY(-50%);
-
-//     @media screen and (max-width: $mq-tablet) {
-//       display: none;
-//     }
-//   }
-
-//   &__link {
-//     font-weight: bold;
-//     display: inline-block;
-//     font-size: 30px;
-//     padding-left: 10px;
-//     text-decoration: none;
-//     color: white;
-
-//   }
-// }
-
-
-
-
+//nav bar styles
 
 
 .navigation-bar {
@@ -49,6 +13,7 @@
   top: 0;
   z-index: 10;
 
+  // pos static in smaller screens so it doesnt take up so much space
   @media screen and (max-width: $mq-computer) {
     position: static;
 
@@ -61,7 +26,7 @@
     padding: 0 1vw 0 1vw;
     display: inline-block;
     position: relative;
-
+    text-shadow: -1px 2px 2px black;
 
     @media screen and (max-width: $mq-phone) {
       font-size: 5vw;
@@ -69,6 +34,7 @@
 
   }
 
+  //animated underline
   &__link:after {
     content: '';
     position: absolute;
@@ -86,6 +52,7 @@
 
   }
 
+  // not visible when in smaller screen for the hamburger menu to show up instead
   &__links {
     @media screen and (max-width: $mq-tablet) {
       display: none;
@@ -109,7 +76,7 @@
   height: 100%;
   background-color: transparent;
   margin-top: 2%;
-  margin-left: 2%;
+  margin-left: 3%;
 
   @media screen and (max-width: $mq-phone) {
     width: 50%;
@@ -129,8 +96,4 @@
     display: block;
   }
 
-}
-
-.hamburger:focus {
-  outline: none;
 }

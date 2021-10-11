@@ -9,6 +9,7 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,8 +20,15 @@ body {
 
 }
 
+
+
 h1 {
   text-align: center;
+}
+
+#about,
+footer {
+  background-color: $color2;
 }
 
 // TOP SECTION STYLES
@@ -34,14 +42,18 @@ h1 {
 
 }
 
-// .top-section {
-//   margin-bottom: 5%;
-// }
+
+
+
+.welcome {
+  color: rgba(54, 71, 221, 0.836);
+  font-size: 4vw;
+  margin: 5vw;
+}
 
 
 //Carousel Section
 #carousel-section {
-  background-color: $color1;
   padding-bottom: 5%;
 }
 
@@ -51,7 +63,6 @@ h1 {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-
 
 
   &__item,
@@ -89,14 +100,13 @@ h1 {
       width: 40px;
       height: 40px;
 
-
-
     }
   }
 }
 
 #carousel__button--prev {
   margin-left: 20px;
+
 }
 
 #carousel__button--next {
@@ -121,7 +131,6 @@ h1 {
 
 //About Section
 #about {
-  background-color: $color2;
 
   h1 {
     padding-top: 5vh;
@@ -230,7 +239,7 @@ h1 {
 //Contact Section 
 
 #contact {
-  background-color: $color1;
+
 
   h1 {
     margin-top: 0;
@@ -271,7 +280,6 @@ h1 {
 //FOOTER STYLES
 
 footer {
-  background-color: $color2;
 
   p {
     display: inline-block;
