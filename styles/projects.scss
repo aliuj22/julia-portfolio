@@ -4,24 +4,28 @@
   @media screen and (min-width: $mq-computer) {
     padding-top: 12vh;
   }
-
 }
 
 .all-img {
   padding: 0 10% 0 10%;
   display: flex;
+  //cb
+  display: -webkit-box;
+  display: -ms-flexbox;
   flex-wrap: wrap;
+  //cb
+  -ms-flex-wrap: wrap;
   justify-content: space-evenly;
+  //cross browser
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   margin-top: 5%;
 
   @media screen and (max-width: $mq-phone) {
     flex-direction: column;
     justify-content: flex-start;
     padding-left: 5%;
-
   }
-
-
 
   a:link,
   a {
@@ -40,12 +44,9 @@
     flex: 0 0 400px;
     transition: transform 1s ease;
 
-
     @media screen and (max-width: $mq-phone) {
       flex: 0 0 auto;
-
     }
-
 
     p {
       margin-top: 0;
@@ -53,7 +54,6 @@
       color: black;
       width: 90vw;
     }
-
 
     .sculptures,
     .paintings,
@@ -63,23 +63,17 @@
       height: 100%;
       border-radius: 25px;
 
-
       @media screen and (max-width: $mq-phone) {
         width: 90vw;
-
       }
     }
   }
 }
-
-
 
 .table-ware {
   float: right;
 
   @media screen and (max-width: $mq-phone) {
     float: none;
-
   }
-
 }
