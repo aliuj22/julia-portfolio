@@ -1,8 +1,7 @@
-@import "variables.scss";
-@import "navigation.scss";
-@import "projects.scss";
-@import "galleries.scss";
-
+@import 'variables.scss';
+@import 'navigation.scss';
+@import 'projects.scss';
+@import 'galleries.scss';
 
 // GENERAL STYLES
 
@@ -14,13 +13,10 @@ body {
 
 body {
   margin: 0 0 0 0;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 100;
   background-color: $color1;
-
 }
-
-
 
 h1 {
   text-align: center;
@@ -39,18 +35,13 @@ footer {
   @media screen and (max-width: $mq-phone) {
     height: 80vw;
   }
-
 }
-
-
-
 
 .welcome {
   color: rgba(54, 71, 221, 0.836);
   font-size: 4vw;
   margin: 5vw;
 }
-
 
 //Carousel Section
 #carousel-section {
@@ -64,7 +55,6 @@ footer {
   margin-left: auto;
   margin-right: auto;
 
-
   &__item,
   &__item--hidden {
     display: none;
@@ -75,7 +65,6 @@ footer {
       height: auto;
       max-height: 90vh;
       border-radius: 10%;
-
     }
   }
 
@@ -99,14 +88,12 @@ footer {
       cursor: pointer;
       width: 40px;
       height: 40px;
-
     }
   }
 }
 
 #carousel__button--prev {
   margin-left: 20px;
-
 }
 
 #carousel__button--next {
@@ -128,10 +115,8 @@ footer {
   }
 }
 
-
 //About Section
 #about {
-
   h1 {
     padding-top: 5vh;
   }
@@ -141,11 +126,10 @@ footer {
   overflow: hidden;
   margin-top: 3%;
 
-  @media screen and (max-width:$mq-large-screens) {
+  @media screen and (max-width: $mq-large-screens) {
     //TO KEEP TEXT AND IMAGES WELL ALIGNED ALL SCREEN SIZES
     display: flex;
     flex-direction: column;
-
   }
 
   .profile-picture {
@@ -156,7 +140,7 @@ footer {
     height: 30%;
     border-radius: 25px;
 
-    @media screen and (max-width:$mq-large-screens) {
+    @media screen and (max-width: $mq-large-screens) {
       margin: 0 auto 0 auto;
       padding: 0;
     }
@@ -164,7 +148,7 @@ footer {
 
   // TEXT INSIDE BIOGRAPHY PART
   h3 {
-    @media screen and (max-width:$mq-large-screens) {
+    @media screen and (max-width: $mq-large-screens) {
       text-align: center;
     }
   }
@@ -175,7 +159,7 @@ footer {
     display: block;
     margin: 2px 0 0 0;
 
-    @media screen and (max-width:$mq-large-screens) {
+    @media screen and (max-width: $mq-large-screens) {
       margin: 0 auto 0 auto;
       padding: 0;
       text-align: center;
@@ -183,13 +167,12 @@ footer {
   }
 }
 
-
 .my-work {
   overflow: hidden;
   margin-top: 5vw;
   padding-bottom: 5vw;
 
-  @media screen and (max-width:$mq-large-screens) {
+  @media screen and (max-width: $mq-large-screens) {
     display: flex;
     flex-direction: column;
   }
@@ -202,11 +185,10 @@ footer {
     height: 30%;
     border-radius: 25px;
 
-    @media screen and (max-width:$mq-large-screens) {
+    @media screen and (max-width: $mq-large-screens) {
       margin: 0 auto 0 auto;
       padding: 0;
     }
-
   }
 
   // TEXT INSIDE MY WORK PART
@@ -219,7 +201,7 @@ footer {
   }
 
   p {
-    @media screen and (max-width:$mq-large-screens) {
+    @media screen and (max-width: $mq-large-screens) {
       margin: 0 auto 0 auto;
       padding: 0;
       text-align: center;
@@ -227,7 +209,7 @@ footer {
   }
 
   h3 {
-    @media screen and (max-width:$mq-large-screens) {
+    @media screen and (max-width: $mq-large-screens) {
       text-align: center;
       margin-right: 0;
       padding-left: 0;
@@ -235,52 +217,43 @@ footer {
   }
 }
 
-
-//Contact Section 
+//Contact Section
 
 #contact {
-
-
+  text-align: center;
   h1 {
     margin-top: 0;
     padding-top: 5vh;
   }
-}
-
-.contact-form {
-  text-align: center;
 
   textarea {
     padding: 2%;
   }
 
-  input[type=submit] {
+  button[type='submit'] {
     padding: 1% 2%;
   }
 
-
   textarea,
-  input[type=text],
-  input[type=submit] {
+  input[type='text'],
+  button[type='submit'],
+  input[type='email'] {
     border-radius: 10%;
     border: none;
-
 
     @media screen and (max-width: $mq-phone) {
       width: 80%;
     }
   }
 
-  input[type=submit]:hover {
+  input[type='submit']:hover {
     background-color: $color-complimentary;
   }
 }
 
-
 //FOOTER STYLES
 
 footer {
-
   p {
     display: inline-block;
     position: absolute;
@@ -302,7 +275,7 @@ footer {
   opacity: 0.7;
 }
 
-//phone and mail icons 
+//phone and mail icons
 
 .tooltip-container {
   position: relative;
@@ -326,11 +299,9 @@ footer {
   z-index: 1;
 }
 
-
 //keyboard focusable tooltips
 .tooltip-container:hover .tooltip-text,
 .tooltip-container:focus .tooltip-text {
-
   visibility: visible;
 }
 
@@ -339,5 +310,4 @@ footer {
   padding-left: 5px;
   padding-right: 5px;
   font-size: 150%;
-
 }

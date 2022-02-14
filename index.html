@@ -102,20 +102,22 @@
     <!-- CONTACT ME FORM -->
     <section id="contact">
       <h1>CONTACT ME</h1>
-      <form class="contact-form" action="mailto:klakaz99@gmail.com" method="post" enctype="text/plain">
+      <form action="https://formsubmit.co/juliawos22@gmail.com" method="POST">
+        <input type="text" name="_honey" style="display:none">
         <label for="text">Your Name:</label>
-        <input type="text" name="Your Name
-        " id="text" value="" />
-
+        <input type="text" name="name" required>
+        <br>
+        <label for="email">Your Mail:</label>
+        <input type="email" name="email" required>
         <br />
         <br />
         <label for="message">Your Message:</label>
         <br />
         <br />
-        <textarea id="message" name="Your Message
-        " rows="20" cols="50"></textarea>
+        <textarea placeholder="Your Message" rows="20" cols="50" name="message"  required></textarea>
+      
         <br />
-        <input type="submit" value="Submit" />
+        <button type="submit">Send</button>
       </form>
     </section>
   </header>

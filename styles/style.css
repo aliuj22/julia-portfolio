@@ -447,34 +447,35 @@ footer {
   }
 }
 
+#contact {
+  text-align: center;
+}
 #contact h1 {
   margin-top: 0;
   padding-top: 5vh;
 }
-
-.contact-form {
-  text-align: center;
-}
-.contact-form textarea {
+#contact textarea {
   padding: 2%;
 }
-.contact-form input[type=submit] {
+#contact button[type=submit] {
   padding: 1% 2%;
 }
-.contact-form textarea,
-.contact-form input[type=text],
-.contact-form input[type=submit] {
+#contact textarea,
+#contact input[type=text],
+#contact button[type=submit],
+#contact input[type=email] {
   border-radius: 10%;
   border: none;
 }
 @media screen and (max-width: 481px) {
-  .contact-form textarea,
-.contact-form input[type=text],
-.contact-form input[type=submit] {
+  #contact textarea,
+#contact input[type=text],
+#contact button[type=submit],
+#contact input[type=email] {
     width: 80%;
   }
 }
-.contact-form input[type=submit]:hover {
+#contact input[type=submit]:hover {
   background-color: #f3efc5;
 }
 
